@@ -1,0 +1,47 @@
+{
+ "allow_roles": [
+  {
+   "role": "Repair Manager"
+  }
+ ],
+ "creation": "2021-03-18 15:13:21.829902",
+ "docstatus": 0,
+ "doctype": "Module Onboarding",
+ "documentation_url": "www.agilasoft.com",
+ "idx": 0,
+ "is_complete": 0,
+ "modified": "2021-03-18 15:31:23.351852",
+ "modified_by": "Administrator",
+ "module": "Repair",
+ "name": "Repair",
+ "owner": "Administrator",
+ "steps": [
+  {
+   "step": "Create a Repair Unit"
+  },
+  {
+   "step": "Create a Workshop"
+  },
+  {
+   "step": "Enter Technicians"
+  },
+  {
+   "step": "Create Operations"
+  },
+  {
+   "step": "Introduction to Service Reception"
+  },
+  {
+   "step": "Create Appointment"
+  },
+  {
+   "step": "Create a Repair Estimate"
+  },
+  {
+   "step": "Create a Repair Order"
+  }
+ ],
+ "subtitle": "Workshops, Repair Units, Technicians and more...",
+ "success_message": "The Repair Module is all set up!",
+ "title": "Let's Set Up the Repair Module."
+}

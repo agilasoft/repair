@@ -1,19 +1,19 @@
 {
- "creation": "2020-12-06 02:12:05.005693",
+ "creation": "2020-12-06 02:13:26.671612",
  "doctype": "DocType",
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
-  "item",
+  "skill",
   "description",
-  "qty"
+  "hours"
  ],
  "fields": [
   {
-   "fieldname": "item",
+   "fieldname": "skill",
    "fieldtype": "Link",
-   "label": "Item",
-   "options": "Part"
+   "label": "Skill",
+   "options": "Skill"
   },
   {
    "fieldname": "description",
@@ -21,16 +21,16 @@
    "label": "Description"
   },
   {
-   "fieldname": "qty",
+   "fieldname": "hours",
    "fieldtype": "Float",
-   "label": "Qty"
+   "label": "Hours"
   }
  ],
  "istable": 1,
- "modified": "2020-12-06 17:05:00.013048",
+ "modified": "2020-12-06 17:04:40.144291",
  "modified_by": "Administrator",
  "module": "Repair",
- "name": "Repair Operation Part",
+ "name": "Repair Job Skill",
  "owner": "jeffbangquil@gmail.com",
  "permissions": [],
  "quick_entry": 1,

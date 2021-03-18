@@ -1,0 +1,21 @@
+{
+ "action": "Create Entry",
+ "action_label": "Create Technician",
+ "creation": "2021-03-18 15:16:09.650282",
+ "description": "Technicians are employees with specialized skills to perform the the repair job.  They are categorized based on their skills and assigned accordingly to the operations to be done.",
+ "docstatus": 0,
+ "doctype": "Onboarding Step",
+ "idx": 0,
+ "is_complete": 0,
+ "is_single": 0,
+ "is_skipped": 0,
+ "modified": "2021-03-18 15:23:55.073380",
+ "modified_by": "Administrator",
+ "name": "Enter Technicians",
+ "owner": "Administrator",
+ "reference_document": "Technician",
+ "show_form_tour": 0,
+ "show_full_form": 0,
+ "title": "Enter Technicians",
+ "validate_action": 1
+}

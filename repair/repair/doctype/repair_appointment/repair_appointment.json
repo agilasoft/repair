@@ -8,7 +8,11 @@
  "field_order": [
   "naming_series",
   "customer",
-  "repair_unit"
+  "repair_unit",
+  "appointment_date_from",
+  "appointment_date_to",
+  "section_break_5",
+  "concerns"
  ],
  "fields": [
   {
@@ -28,11 +32,30 @@
    "fieldtype": "Link",
    "label": "Repair Unit",
    "options": "Repair Unit"
+  },
+  {
+   "fieldname": "section_break_5",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "concerns",
+   "fieldtype": "Text Editor",
+   "label": "Concerns"
+  },
+  {
+   "fieldname": "appointment_date_from",
+   "fieldtype": "Datetime",
+   "label": "Appointment Date From"
+  },
+  {
+   "fieldname": "appointment_date_to",
+   "fieldtype": "Datetime",
+   "label": "Appointment Date To"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2021-02-26 16:16:31.000568",
+ "modified": "2021-03-17 09:56:14.082460",
  "modified_by": "Administrator",
  "module": "Repair",
  "name": "Repair Appointment",

@@ -36,7 +36,16 @@
    "hidden": 0,
    "is_query_report": 0,
    "label": "Estimate",
-   "link_to": "Estimate",
+   "link_to": "Repair Estimate",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Repair Order",
+   "link_to": "Repair Order",
    "link_type": "DocType",
    "onboard": 0,
    "type": "Link"
@@ -52,10 +61,46 @@
   {
    "hidden": 0,
    "is_query_report": 0,
+   "label": "Repair Unit Inspection",
+   "link_to": "Repair Unit Inspection",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Job Assignment",
+   "link_to": "",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
    "label": "Parts Management",
    "link_type": "DocType",
    "onboard": 0,
    "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Material Request",
+   "link_to": "Material Request",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Stock Entry",
+   "link_to": "Stock Entry",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
   },
   {
    "hidden": 0,
@@ -68,10 +113,29 @@
   {
    "hidden": 0,
    "is_query_report": 0,
-   "label": "Technicians",
+   "label": "Repair Unit",
+   "link_to": "Repair Unit",
    "link_type": "DocType",
    "onboard": 0,
-   "type": "Card Break"
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Workshop",
+   "link_to": "Workshop",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Technicians",
+   "link_to": "Technician",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
   },
   {
    "hidden": 0,
@@ -109,10 +173,11 @@
    "type": "Link"
   }
  ],
- "modified": "2021-02-26 17:12:35.598269",
+ "modified": "2021-03-18 15:16:21.708977",
  "modified_by": "Administrator",
  "module": "Repair",
  "name": "Repair",
+ "onboarding": "Repair",
  "owner": "Administrator",
  "pin_to_bottom": 0,
  "pin_to_top": 0,
@@ -120,7 +185,19 @@
   {
    "doc_view": "",
    "label": "Estimate",
-   "link_to": "Estimate",
+   "link_to": "Repair Estimate",
+   "type": "DocType"
+  },
+  {
+   "doc_view": "",
+   "label": "Repair Order",
+   "link_to": "Repair Order",
+   "type": "DocType"
+  },
+  {
+   "doc_view": "",
+   "label": "Job Assignment",
+   "link_to": "Repair Job Assignment",
    "type": "DocType"
   }
  ],

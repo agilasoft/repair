@@ -1,0 +1,21 @@
+{
+ "action": "Create Entry",
+ "action_label": "Create New Unit",
+ "creation": "2021-03-18 15:13:15.458722",
+ "description": "A repair unit is the item purchased by the customer subject for repair.  It can be an equipment, a device or any other item that can be identified by a serial number.",
+ "docstatus": 0,
+ "doctype": "Onboarding Step",
+ "idx": 0,
+ "is_complete": 0,
+ "is_single": 0,
+ "is_skipped": 0,
+ "modified": "2021-03-18 15:22:25.147353",
+ "modified_by": "Administrator",
+ "name": "Create a Repair Unit",
+ "owner": "Administrator",
+ "reference_document": "Repair Unit",
+ "show_form_tour": 0,
+ "show_full_form": 0,
+ "title": "Create a Repair Unit",
+ "validate_action": 1
+}

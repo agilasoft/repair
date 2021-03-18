@@ -1,0 +1,30 @@
+{
+ "actions": [],
+ "creation": "2021-02-28 11:35:03.765263",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "diagnostic"
+ ],
+ "fields": [
+  {
+   "fieldname": "diagnostic",
+   "fieldtype": "Link",
+   "label": "Diagnostic",
+   "options": "Repair Diagnostic"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2021-02-28 11:35:03.765263",
+ "modified_by": "Administrator",
+ "module": "Repair",
+ "name": "Repair Estimate Diagnostic",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

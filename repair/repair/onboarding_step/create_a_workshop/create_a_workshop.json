@@ -1,0 +1,21 @@
+{
+ "action": "Create Entry",
+ "action_label": "Create a Workshop",
+ "creation": "2021-03-18 15:15:36.310028",
+ "description": "A workshop is a dedicated place where specific jobs are done. A repair center can have one or more workshop depending on the services offered.",
+ "docstatus": 0,
+ "doctype": "Onboarding Step",
+ "idx": 0,
+ "is_complete": 0,
+ "is_single": 0,
+ "is_skipped": 0,
+ "modified": "2021-03-18 15:26:22.591661",
+ "modified_by": "Administrator",
+ "name": "Create a Workshop",
+ "owner": "Administrator",
+ "reference_document": "Workshop",
+ "show_form_tour": 0,
+ "show_full_form": 0,
+ "title": "Create a Workshop",
+ "validate_action": 1
+}
