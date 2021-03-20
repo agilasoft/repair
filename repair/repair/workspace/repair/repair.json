@@ -4,7 +4,7 @@
  "charts": [],
  "creation": "2021-02-26 16:04:51.467908",
  "developer_mode_only": 0,
- "disable_user_customization": 0,
+ "disable_user_customization": 1,
  "docstatus": 0,
  "doctype": "Workspace",
  "extends_another_page": 0,
@@ -173,7 +173,7 @@
    "type": "Link"
   }
  ],
- "modified": "2021-03-18 15:16:21.708977",
+ "modified": "2021-03-18 17:59:08.802908",
  "modified_by": "Administrator",
  "module": "Repair",
  "name": "Repair",
@@ -183,13 +183,19 @@
  "pin_to_top": 0,
  "shortcuts": [
   {
-   "doc_view": "",
+   "doc_view": "Calendar",
+   "label": "Appointment Calendar",
+   "link_to": "Repair Appointment",
+   "type": "DocType"
+  },
+  {
+   "doc_view": "Tree",
    "label": "Estimate",
    "link_to": "Repair Estimate",
    "type": "DocType"
   },
   {
-   "doc_view": "",
+   "doc_view": "New",
    "label": "Repair Order",
    "link_to": "Repair Order",
    "type": "DocType"

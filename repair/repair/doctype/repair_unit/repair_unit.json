@@ -1,5 +1,6 @@
 {
  "actions": [],
+ "autoname": "field:code",
  "creation": "2021-02-26 16:15:49.877348",
  "doctype": "DocType",
  "editable_grid": 1,
@@ -13,7 +14,8 @@
   {
    "fieldname": "code",
    "fieldtype": "Data",
-   "label": "Code"
+   "label": "Code",
+   "unique": 1
   },
   {
    "fieldname": "description",
@@ -29,7 +31,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2021-02-26 16:15:49.877348",
+ "modified": "2021-03-20 09:06:17.351593",
  "modified_by": "Administrator",
  "module": "Repair",
  "name": "Repair Unit",

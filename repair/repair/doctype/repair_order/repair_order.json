@@ -18,6 +18,8 @@
   "company",
   "transaction_date",
   "valid_till",
+  "repair_estimate",
+  "appointment",
   "contact_section",
   "billto_customer",
   "billto_insurance",
@@ -103,7 +105,8 @@
   "enq_det",
   "supplier_quotation",
   "opportunity",
-  "lost_reasons"
+  "lost_reasons",
+  "amended_from"
  ],
  "fields": [
   {
@@ -874,13 +877,50 @@
    "label": "Lost Reasons",
    "options": "Quotation Lost Reason Detail",
    "read_only": 1
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Repair Order",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "repair_estimate",
+   "fieldtype": "Link",
+   "label": "Repair Estimate",
+   "options": "Repair Estimate"
+  },
+  {
+   "fieldname": "appointment",
+   "fieldtype": "Link",
+   "label": "Appointment",
+   "options": "Repair Appointment"
   }
  ],
  "icon": "fa fa-shopping-cart",
  "is_submittable": 1,
- "links": [],
+ "links": [
+  {
+   "group": "Workshop",
+   "link_doctype": "Repair Job Assignment",
+   "link_fieldname": "repair_order"
+  },
+  {
+   "group": "Workshop",
+   "link_doctype": "Repair Unit Inspection",
+   "link_fieldname": "repair_order"
+  },
+  {
+   "group": "Stocks",
+   "link_doctype": "Material Request",
+   "link_fieldname": "repair_order"
+  }
+ ],
  "max_attachments": 1,
- "modified": "2021-03-17 12:54:30.381178",
+ "modified": "2021-03-20 16:51:33.495075",
  "modified_by": "Administrator",
  "module": "Repair",
  "name": "Repair Order",

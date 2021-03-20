@@ -1,5 +1,12 @@
 {
- "actions": [],
+ "actions": [
+  {
+   "action": ".",
+   "action_type": "Server Action",
+   "group": "Create",
+   "label": "Repair Estimate"
+  }
+ ],
  "autoname": "naming_series:",
  "creation": "2021-02-26 16:16:31.000568",
  "doctype": "DocType",
@@ -54,8 +61,17 @@
   }
  ],
  "index_web_pages_for_search": 1,
- "links": [],
- "modified": "2021-03-17 09:56:14.082460",
+ "links": [
+  {
+   "link_doctype": "Repair Estimate",
+   "link_fieldname": "appointment"
+  },
+  {
+   "link_doctype": "Repair Order",
+   "link_fieldname": "appointment"
+  }
+ ],
+ "modified": "2021-03-20 16:24:28.355015",
  "modified_by": "Administrator",
  "module": "Repair",
  "name": "Repair Appointment",
@@ -76,5 +92,6 @@
  ],
  "sort_field": "modified",
  "sort_order": "DESC",
+ "title_field": "repair_unit",
  "track_changes": 1
 }
