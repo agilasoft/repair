@@ -364,7 +364,7 @@
    "label": "Spareparts",
    "oldfieldname": "quotation_details",
    "oldfieldtype": "Table",
-   "options": "Estimate Sparepart",
+   "options": "Repair Estimate Sparepart",
    "reqd": 1,
    "width": "40px"
   },
@@ -902,37 +902,37 @@
   }
  ],
  "max_attachments": 1,
- "modified": "2021-03-20 16:22:41.360042",
+ "modified": "2021-03-21 10:09:49.850793",
  "modified_by": "Administrator",
  "module": "Repair",
  "name": "Repair Estimate",
  "owner": "Administrator",
  "permissions": [
   {
-   "amend": 1,
-   "cancel": 1,
    "create": 1,
-   "delete": 1,
    "email": 1,
+   "export": 1,
    "print": 1,
    "read": 1,
    "report": 1,
-   "role": "Sales User",
+   "role": "Repair User",
    "share": 1,
    "submit": 1,
    "write": 1
   },
   {
-   "permlevel": 1,
+   "cancel": 1,
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
    "read": 1,
    "report": 1,
-   "role": "Sales User"
-  },
-  {
-   "permlevel": 1,
-   "read": 1,
-   "report": 1,
-   "role": "Sales Manager",
+   "role": "Repair Manager",
+   "select": 1,
+   "share": 1,
+   "submit": 1,
    "write": 1
   },
   {
@@ -942,54 +942,14 @@
    "delete": 1,
    "email": 1,
    "export": 1,
-   "import": 1,
    "print": 1,
    "read": 1,
    "report": 1,
-   "role": "Sales Manager",
+   "role": "System Manager",
+   "select": 1,
    "share": 1,
    "submit": 1,
    "write": 1
-  },
-  {
-   "amend": 1,
-   "cancel": 1,
-   "create": 1,
-   "delete": 1,
-   "email": 1,
-   "print": 1,
-   "read": 1,
-   "report": 1,
-   "role": "Maintenance Manager",
-   "share": 1,
-   "submit": 1,
-   "write": 1
-  },
-  {
-   "permlevel": 1,
-   "read": 1,
-   "report": 1,
-   "role": "Maintenance Manager"
-  },
-  {
-   "amend": 1,
-   "cancel": 1,
-   "create": 1,
-   "delete": 1,
-   "email": 1,
-   "print": 1,
-   "read": 1,
-   "report": 1,
-   "role": "Maintenance User",
-   "share": 1,
-   "submit": 1,
-   "write": 1
-  },
-  {
-   "permlevel": 1,
-   "read": 1,
-   "report": 1,
-   "role": "Maintenance User"
   }
  ],
  "search_fields": "status,transaction_date,customer,order_type",

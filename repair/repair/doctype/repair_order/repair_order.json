@@ -17,7 +17,6 @@
   "column_break1",
   "company",
   "transaction_date",
-  "valid_till",
   "repair_estimate",
   "appointment",
   "contact_section",
@@ -203,11 +202,6 @@
    "width": "100px"
   },
   {
-   "fieldname": "valid_till",
-   "fieldtype": "Date",
-   "label": "Valid Till"
-  },
-  {
    "collapsible": 1,
    "fieldname": "contact_section",
    "fieldtype": "Section Break",
@@ -365,7 +359,7 @@
    "label": "Spareparts",
    "oldfieldname": "quotation_details",
    "oldfieldtype": "Table",
-   "options": "Estimate Sparepart",
+   "options": "Repair Order Sparepart",
    "reqd": 1,
    "width": "40px"
   },
@@ -920,94 +914,46 @@
   }
  ],
  "max_attachments": 1,
- "modified": "2021-03-20 16:51:33.495075",
+ "modified": "2021-03-21 15:50:06.195032",
  "modified_by": "Administrator",
  "module": "Repair",
  "name": "Repair Order",
  "owner": "Administrator",
  "permissions": [
   {
-   "amend": 1,
-   "cancel": 1,
    "create": 1,
-   "delete": 1,
    "email": 1,
+   "export": 1,
    "print": 1,
    "read": 1,
    "report": 1,
-   "role": "Sales User",
+   "role": "Repair User",
    "share": 1,
    "submit": 1,
    "write": 1
   },
   {
-   "permlevel": 1,
-   "read": 1,
-   "report": 1,
-   "role": "Sales User"
-  },
-  {
-   "permlevel": 1,
-   "read": 1,
-   "report": 1,
-   "role": "Sales Manager",
-   "write": 1
-  },
-  {
-   "amend": 1,
    "cancel": 1,
    "create": 1,
    "delete": 1,
    "email": 1,
    "export": 1,
-   "import": 1,
    "print": 1,
    "read": 1,
    "report": 1,
-   "role": "Sales Manager",
+   "role": "Repair Manager",
    "share": 1,
    "submit": 1,
    "write": 1
   },
   {
-   "amend": 1,
-   "cancel": 1,
-   "create": 1,
-   "delete": 1,
    "email": 1,
+   "export": 1,
    "print": 1,
    "read": 1,
    "report": 1,
-   "role": "Maintenance Manager",
-   "share": 1,
-   "submit": 1,
-   "write": 1
-  },
-  {
-   "permlevel": 1,
-   "read": 1,
-   "report": 1,
-   "role": "Maintenance Manager"
-  },
-  {
-   "amend": 1,
-   "cancel": 1,
-   "create": 1,
-   "delete": 1,
-   "email": 1,
-   "print": 1,
-   "read": 1,
-   "report": 1,
-   "role": "Maintenance User",
-   "share": 1,
-   "submit": 1,
-   "write": 1
-  },
-  {
-   "permlevel": 1,
-   "read": 1,
-   "report": 1,
-   "role": "Maintenance User"
+   "role": "Repair View",
+   "share": 1
   }
  ],
  "search_fields": "status,transaction_date,customer,order_type",

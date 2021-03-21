@@ -53,7 +53,7 @@
   {
    "hidden": 0,
    "is_query_report": 0,
-   "label": "Shop Floor",
+   "label": "Workshop",
    "link_type": "DocType",
    "onboard": 0,
    "type": "Card Break"
@@ -71,7 +71,7 @@
    "hidden": 0,
    "is_query_report": 0,
    "label": "Job Assignment",
-   "link_to": "",
+   "link_to": "Repair Job Assignment",
    "link_type": "DocType",
    "onboard": 0,
    "type": "Link"
@@ -173,7 +173,7 @@
    "type": "Link"
   }
  ],
- "modified": "2021-03-18 17:59:08.802908",
+ "modified": "2021-03-21 10:53:02.861379",
  "modified_by": "Administrator",
  "module": "Repair",
  "name": "Repair",

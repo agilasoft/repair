@@ -1,7 +1,7 @@
 {
  "actions": [],
  "autoname": "field:code",
- "creation": "2020-12-06 02:05:33.397218",
+ "creation": "2020-12-06 02:04:42.450448",
  "doctype": "DocType",
  "editable_grid": 1,
  "engine": "InnoDB",
@@ -23,10 +23,10 @@
   }
  ],
  "links": [],
- "modified": "2021-03-21 16:07:30.036807",
+ "modified": "2021-03-21 16:06:57.634106",
  "modified_by": "Administrator",
  "module": "Repair",
- "name": "Workshop",
+ "name": "Skills Group",
  "owner": "Administrator",
  "permissions": [
   {
@@ -49,6 +49,18 @@
    "print": 1,
    "read": 1,
    "report": 1,
+   "role": "Repair Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
    "role": "Workshop Manager",
    "share": 1,
    "write": 1
@@ -59,7 +71,7 @@
    "print": 1,
    "read": 1,
    "report": 1,
-   "role": "Workshop User",
+   "role": "Repair User",
    "share": 1
   },
   {
@@ -68,7 +80,7 @@
    "print": 1,
    "read": 1,
    "report": 1,
-   "role": "Repair User",
+   "role": "Workshop User",
    "share": 1
   }
  ],

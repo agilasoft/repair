@@ -1,21 +1,31 @@
 {
  "actions": [],
- "creation": "2021-02-28 11:32:29.356871",
+ "creation": "2020-12-08 14:17:03.330152",
  "doctype": "DocType",
  "document_type": "Document",
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
-  "repair_operation",
-  "col_break1",
-  "operation_name",
+  "operation",
+  "item_code",
+  "customer_item_code",
   "charge_to",
+  "col_break1",
+  "item_name",
   "section_break_5",
   "description",
+  "item_group",
+  "brand",
+  "image_section",
+  "image",
+  "image_view",
   "quantity_and_rate",
   "qty",
+  "stock_uom",
   "col_break2",
   "uom",
+  "conversion_factor",
+  "stock_qty",
   "section_break_16",
   "price_list_rate",
   "base_price_list_rate",
@@ -40,40 +50,69 @@
   "base_net_amount",
   "pricing_rules",
   "is_free_item",
+  "item_weight_details",
+  "weight_per_unit",
+  "total_weight",
+  "column_break_20",
+  "weight_uom",
   "reference",
-  "workshop",
+  "warehouse",
   "column_break_30",
+  "prevdoc_doctype",
+  "prevdoc_docname",
+  "item_balance",
+  "projected_qty",
+  "actual_qty",
+  "col_break4",
+  "stock_balance",
+  "item_tax_rate",
+  "shopping_cart_section",
   "additional_notes",
   "section_break_61",
   "page_break"
  ],
  "fields": [
   {
+   "columns": 2,
+   "fieldname": "operation",
+   "fieldtype": "Link",
+   "label": "Operation",
+   "options": "Repair Operation"
+  },
+  {
    "bold": 1,
    "columns": 4,
-   "fieldname": "repair_operation",
+   "fieldname": "item_code",
    "fieldtype": "Link",
    "in_global_search": 1,
    "in_list_view": 1,
-   "label": "Repair Operation",
+   "label": "Item Code",
    "oldfieldname": "item_code",
    "oldfieldtype": "Link",
-   "options": "Repair Operation",
+   "options": "Item",
    "print_width": "150px",
    "reqd": 1,
    "search_index": 1,
    "width": "150px"
   },
   {
+   "fieldname": "customer_item_code",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Customer's Item Code",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
    "fieldname": "col_break1",
    "fieldtype": "Column Break"
   },
   {
-   "fetch_from": "repair_operation.description",
-   "fieldname": "operation_name",
+   "fetch_from": "item_code.item_name",
+   "fieldname": "item_name",
    "fieldtype": "Data",
    "in_global_search": 1,
-   "label": "Operation Name",
+   "label": "Item Name",
    "oldfieldname": "item_name",
    "oldfieldtype": "Data",
    "print_hide": 1,
@@ -82,28 +121,64 @@
    "width": "150px"
   },
   {
-   "fieldname": "charge_to",
-   "fieldtype": "Select",
-   "in_list_view": 1,
-   "label": "Charge To",
-   "options": "Customer\nInsurance\nWarranty"
-  },
-  {
    "collapsible": 1,
    "fieldname": "section_break_5",
    "fieldtype": "Section Break",
    "label": "Description"
   },
   {
-   "fetch_from": "operation.description",
    "fieldname": "description",
    "fieldtype": "Text Editor",
    "label": "Description",
    "oldfieldname": "description",
    "oldfieldtype": "Small Text",
+   "options": "item_code.item_description",
    "print_width": "300px",
    "reqd": 1,
    "width": "300px"
+  },
+  {
+   "fieldname": "item_group",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "Item Group",
+   "oldfieldname": "item_group",
+   "oldfieldtype": "Link",
+   "options": "Item Group",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "brand",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "Brand",
+   "oldfieldname": "brand",
+   "oldfieldtype": "Link",
+   "options": "Brand",
+   "print_hide": 1,
+   "print_width": "150px",
+   "read_only": 1,
+   "width": "150px"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "image_section",
+   "fieldtype": "Section Break",
+   "label": "Image"
+  },
+  {
+   "fieldname": "image",
+   "fieldtype": "Attach",
+   "hidden": 1,
+   "label": "Image"
+  },
+  {
+   "fieldname": "image_view",
+   "fieldtype": "Image",
+   "label": "Image View",
+   "options": "image",
+   "print_hide": 1
   },
   {
    "fieldname": "quantity_and_rate",
@@ -112,7 +187,7 @@
   },
   {
    "bold": 1,
-   "columns": 2,
+   "columns": 1,
    "fieldname": "qty",
    "fieldtype": "Float",
    "in_list_view": 1,
@@ -121,6 +196,18 @@
    "oldfieldtype": "Currency",
    "print_width": "100px",
    "reqd": 1,
+   "width": "100px"
+  },
+  {
+   "fieldname": "stock_uom",
+   "fieldtype": "Link",
+   "label": "Stock UOM",
+   "oldfieldname": "stock_uom",
+   "oldfieldtype": "Data",
+   "options": "UOM",
+   "print_hide": 1,
+   "print_width": "100px",
+   "read_only": 1,
    "width": "100px"
   },
   {
@@ -133,6 +220,21 @@
    "label": "UOM",
    "options": "UOM",
    "reqd": 1
+  },
+  {
+   "fieldname": "conversion_factor",
+   "fieldtype": "Float",
+   "label": "UOM Conversion Factor",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "stock_qty",
+   "fieldtype": "Float",
+   "label": "Qty as per Stock UOM",
+   "no_copy": 1,
+   "print_hide": 1,
+   "read_only": 1
   },
   {
    "fieldname": "section_break_16",
@@ -229,7 +331,7 @@
   },
   {
    "bold": 1,
-   "columns": 2,
+   "columns": 1,
    "fieldname": "rate",
    "fieldtype": "Currency",
    "in_list_view": 1,
@@ -336,13 +438,130 @@
    "read_only": 1
   },
   {
+   "collapsible": 1,
+   "fieldname": "item_weight_details",
+   "fieldtype": "Section Break",
+   "label": "Item Weight Details"
+  },
+  {
+   "fieldname": "weight_per_unit",
+   "fieldtype": "Float",
+   "label": "Weight Per Unit",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "total_weight",
+   "fieldtype": "Float",
+   "label": "Total Weight",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_20",
+   "fieldtype": "Column Break",
+   "print_hide": 1
+  },
+  {
+   "fieldname": "weight_uom",
+   "fieldtype": "Link",
+   "label": "Weight UOM",
+   "options": "UOM",
+   "read_only": 1
+  },
+  {
    "fieldname": "reference",
    "fieldtype": "Section Break",
    "label": "Warehouse and Reference"
   },
   {
+   "fieldname": "warehouse",
+   "fieldtype": "Link",
+   "label": "Warehouse",
+   "options": "Warehouse",
+   "print_hide": 1,
+   "report_hide": 1
+  },
+  {
    "fieldname": "column_break_30",
    "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "prevdoc_doctype",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "Against Doctype",
+   "no_copy": 1,
+   "oldfieldname": "prevdoc_doctype",
+   "oldfieldtype": "Data",
+   "options": "DocType",
+   "print_hide": 1,
+   "print_width": "150px",
+   "read_only": 1,
+   "width": "150px"
+  },
+  {
+   "fieldname": "prevdoc_docname",
+   "fieldtype": "Dynamic Link",
+   "label": "Against Docname",
+   "no_copy": 1,
+   "oldfieldname": "prevdoc_docname",
+   "oldfieldtype": "Data",
+   "options": "prevdoc_doctype",
+   "print_hide": 1,
+   "print_width": "150px",
+   "read_only": 1,
+   "width": "150px"
+  },
+  {
+   "collapsible": 1,
+   "collapsible_depends_on": "eval:doc.warehouse",
+   "fieldname": "item_balance",
+   "fieldtype": "Section Break",
+   "label": "Planning"
+  },
+  {
+   "fieldname": "projected_qty",
+   "fieldtype": "Float",
+   "label": "Projected Qty",
+   "print_hide": 1,
+   "read_only": 1,
+   "report_hide": 1
+  },
+  {
+   "fieldname": "actual_qty",
+   "fieldtype": "Float",
+   "label": "Actual Qty",
+   "no_copy": 1,
+   "print_hide": 1,
+   "read_only": 1,
+   "report_hide": 1
+  },
+  {
+   "fieldname": "col_break4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "stock_balance",
+   "fieldtype": "Button",
+   "label": "Stock Balance"
+  },
+  {
+   "fieldname": "item_tax_rate",
+   "fieldtype": "Code",
+   "hidden": 1,
+   "label": "Item Tax Rate",
+   "oldfieldname": "item_tax_rate",
+   "oldfieldtype": "Small Text",
+   "print_hide": 1,
+   "read_only": 1,
+   "report_hide": 1
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "shopping_cart_section",
+   "fieldtype": "Section Break",
+   "label": "Shopping Cart"
   },
   {
    "fieldname": "additional_notes",
@@ -366,20 +585,20 @@
    "report_hide": 1
   },
   {
-   "fieldname": "workshop",
-   "fieldtype": "Link",
-   "label": "Workshop",
-   "options": "Workshop",
-   "print_hide": 1,
-   "report_hide": 1
+   "columns": 2,
+   "fieldname": "charge_to",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Charge To",
+   "options": "Customer\nInsurance\nWarranty"
   }
  ],
  "istable": 1,
  "links": [],
- "modified": "2021-03-21 15:50:54.759752",
+ "modified": "2021-03-21 10:22:34.650639",
  "modified_by": "Administrator",
  "module": "Repair",
- "name": "Repair Order Operation",
+ "name": "Repair Estimate Sparepart",
  "owner": "Administrator",
  "permissions": [],
  "sort_field": "modified",

@@ -71,7 +71,7 @@
    "link_fieldname": "appointment"
   }
  ],
- "modified": "2021-03-20 16:24:28.355015",
+ "modified": "2021-03-20 20:32:37.167670",
  "modified_by": "Administrator",
  "module": "Repair",
  "name": "Repair Appointment",
@@ -86,6 +86,29 @@
    "read": 1,
    "report": 1,
    "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Repair Appointment User",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Repair Manager",
    "share": 1,
    "write": 1
   }

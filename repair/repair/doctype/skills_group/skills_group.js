@@ -1,7 +1,7 @@
 // Copyright (c) 2020, AgilaSoft Inc. and contributors
 // For license information, please see license.txt
 
-frappe.ui.form.on('Skill Group', {
+frappe.ui.form.on('Skills Group', {
 	// refresh: function(frm) {
 
 	// }

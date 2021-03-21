@@ -8,7 +8,8 @@
  "field_order": [
   "repair_unit",
   "repair_order",
-  "date"
+  "date",
+  "checklist_section"
  ],
  "fields": [
   {
@@ -27,11 +28,16 @@
    "fieldname": "date",
    "fieldtype": "Date",
    "label": "Date"
+  },
+  {
+   "fieldname": "checklist_section",
+   "fieldtype": "Section Break",
+   "label": "Checklist"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2021-03-18 14:01:15.541733",
+ "modified": "2021-03-21 09:58:19.980142",
  "modified_by": "Administrator",
  "module": "Repair",
  "name": "Repair Unit Inspection",
@@ -46,6 +52,29 @@
    "read": 1,
    "report": 1,
    "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Repair User",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Repair Manager",
    "share": 1,
    "write": 1
   }
