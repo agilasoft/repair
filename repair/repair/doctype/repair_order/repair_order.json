@@ -1,5 +1,12 @@
 {
- "actions": [],
+ "actions": [
+  {
+   "action": "Create",
+   "action_type": "Server Action",
+   "group": "Create",
+   "label": "Invoices"
+  }
+ ],
  "allow_import": 1,
  "autoname": "naming_series:",
  "creation": "2021-02-27 14:57:03.418521",
@@ -914,7 +921,7 @@
   }
  ],
  "max_attachments": 1,
- "modified": "2021-03-21 15:50:06.195032",
+ "modified": "2021-09-04 18:31:26.004829",
  "modified_by": "Administrator",
  "module": "Repair",
  "name": "Repair Order",

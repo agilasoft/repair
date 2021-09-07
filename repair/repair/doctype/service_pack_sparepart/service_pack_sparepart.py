@@ -3,15 +3,8 @@
 # For license information, please see license.txt
 
 from __future__ import unicode_literals
-import frappe
+# import frappe
 from frappe.model.document import Document
 
-class RepairEstimate(Document):
-    pass
-    
-    @frappe.whitelist()
-    def create_repair_order(self):
-        return 0
-    
-    def test_me(self):
-        return 0
+class ServicePackSparepart(Document):
+	pass

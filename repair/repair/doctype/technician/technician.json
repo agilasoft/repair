@@ -1,4 +1,5 @@
 {
+ "actions": [],
  "autoname": "field:employee",
  "creation": "2020-12-06 16:59:49.660086",
  "doctype": "DocType",
@@ -7,7 +8,8 @@
  "field_order": [
   "employee",
   "full_name",
-  "skills_section"
+  "skills_section",
+  "skills"
  ],
  "fields": [
   {
@@ -26,9 +28,16 @@
    "fieldname": "skills_section",
    "fieldtype": "Section Break",
    "label": "Skills"
+  },
+  {
+   "fieldname": "skills",
+   "fieldtype": "Table MultiSelect",
+   "label": "Skills",
+   "options": "Technician Skill"
   }
  ],
- "modified": "2020-12-06 16:59:49.660086",
+ "links": [],
+ "modified": "2021-09-04 17:48:50.345393",
  "modified_by": "Administrator",
  "module": "Repair",
  "name": "Technician",

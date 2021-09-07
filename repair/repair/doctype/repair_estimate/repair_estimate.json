@@ -1,5 +1,12 @@
 {
- "actions": [],
+ "actions": [
+  {
+   "action": "repair.repair.doctype.repair_estimate.repair_estimate.create_repair_order",
+   "action_type": "Server Action",
+   "group": "Create",
+   "label": "Repair Order"
+  }
+ ],
  "allow_import": 1,
  "autoname": "naming_series:",
  "creation": "2021-03-17 10:27:47.060636",
@@ -902,7 +909,7 @@
   }
  ],
  "max_attachments": 1,
- "modified": "2021-03-21 10:09:49.850793",
+ "modified": "2021-09-07 22:03:43.904463",
  "modified_by": "Administrator",
  "module": "Repair",
  "name": "Repair Estimate",

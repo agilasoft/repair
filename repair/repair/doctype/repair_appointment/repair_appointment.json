@@ -16,7 +16,7 @@
   "naming_series",
   "customer",
   "repair_unit",
-  "appointment_date_from",
+  "start",
   "appointment_date_to",
   "section_break_5",
   "concerns"
@@ -50,14 +50,14 @@
    "label": "Concerns"
   },
   {
-   "fieldname": "appointment_date_from",
-   "fieldtype": "Datetime",
-   "label": "Appointment Date From"
-  },
-  {
    "fieldname": "appointment_date_to",
    "fieldtype": "Datetime",
    "label": "Appointment Date To"
+  },
+  {
+   "fieldname": "start",
+   "fieldtype": "Datetime",
+   "label": "Appointment Date From"
   }
  ],
  "index_web_pages_for_search": 1,
@@ -71,7 +71,7 @@
    "link_fieldname": "appointment"
   }
  ],
- "modified": "2021-03-20 20:32:37.167670",
+ "modified": "2021-09-04 18:06:15.723293",
  "modified_by": "Administrator",
  "module": "Repair",
  "name": "Repair Appointment",
