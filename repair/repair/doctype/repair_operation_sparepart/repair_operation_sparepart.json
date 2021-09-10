@@ -19,12 +19,14 @@
    "options": "Item"
   },
   {
+   "fetch_from": "item.item_name",
    "fieldname": "item_name",
    "fieldtype": "Data",
    "in_list_view": 1,
    "label": "Item Name"
   },
   {
+   "fetch_from": "item.stock_uom",
    "fieldname": "uom",
    "fieldtype": "Link",
    "in_list_view": 1,
@@ -41,7 +43,7 @@
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2021-03-21 15:59:47.173025",
+ "modified": "2021-09-09 09:48:42.541884",
  "modified_by": "Administrator",
  "module": "Repair",
  "name": "Repair Operation Sparepart",
