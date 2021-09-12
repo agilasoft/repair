@@ -79,3 +79,33 @@ class RepairEstimate(Document):
                         'stock_qty': p.qty,
                         'qty': p.qty
                     })
+
+@frappe.whitelist()                    
+def get_rate(doc, item, billto):
+    if billto == "Customer":
+        rate = frappe.db.sql("""SELECT price_list_rate FROM `tabRepair Estimate` e, `tabItem Price` p
+            WHERE e.customer_pl = p.price_list AND p.item_code = %s AND e.name = %s""", 
+            (item, doc), as_dict=1)
+        for r in rate:
+            return r.price_list_rate
+        else:
+            frappe.throw("No Pricelist found.")
+    
+    if billto == "Insurance":
+        rate = frappe.db.sql("""SELECT price_list_rate FROM `tabRepair Estimate` e, `tabItem Price` p
+            WHERE e.insurance_pl = p.price_list AND p.item_code = %s AND e.name = %s""", 
+            (item, doc), as_dict=1)
+        for r in rate:
+            return r.price_list_rate
+        else:
+            frappe.throw("No Pricelist found.")
+    
+    if billto == "Warranty":
+        rate = frappe.db.sql("""SELECT price_list_rate FROM `tabRepair Estimate` e, `tabItem Price` p
+            WHERE e.warranty_pl = p.price_list AND p.item_code = %s AND e.name = %s""", 
+            (item, doc), as_dict=1)
+        for r in rate:
+            return r.price_list_rate
+        else:
+            frappe.throw("No Pricelist found.")
+           

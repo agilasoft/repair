@@ -13,6 +13,23 @@ frappe.ui.form.on('Repair Estimate', {
 	}
 });
 
+frappe.ui.form.on("Repair Estimate Operation","charge_to", function(frm, cdt,cdn){
+    var d = frappe.model.get_doc(cdt, cdn);
+    frappe.call({
+        method: 'repair.repair.doctype.repair_estimate.repair_estimate.get_rate',
+        args:{
+            'doc': frm.doc.name,
+            'item': d.repair_operation,
+            'billto': d.charge_to
+        },
+        callback: function(data) {
+            if (!data.exc) {
+                frappe.model.set_value(cdt, cdn, "rate", data.message);
+            }
+        },
+    });
+});
+
 let service_pack_dialog = function(frm) {
 	let dialog = new frappe.ui.Dialog({
 		title: 'Add Service Pack',

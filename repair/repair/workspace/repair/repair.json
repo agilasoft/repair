@@ -128,15 +128,6 @@
   {
    "hidden": 0,
    "is_query_report": 0,
-   "label": "Operations",
-   "link_to": "Repair Operation",
-   "link_type": "DocType",
-   "onboard": 0,
-   "type": "Link"
-  },
-  {
-   "hidden": 0,
-   "is_query_report": 0,
    "label": "Workshop",
    "link_to": "Workshop",
    "link_type": "DocType",
@@ -188,7 +179,7 @@
    "type": "Link"
   }
  ],
- "modified": "2021-09-04 17:39:13.847811",
+ "modified": "2021-09-11 13:36:27.383605",
  "modified_by": "Administrator",
  "module": "Repair",
  "name": "Repair",
